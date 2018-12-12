@@ -10,6 +10,7 @@
   <!-- Load user specified extra properties -->
   <property file="${user.home}/javacard.properties"/>
   <property name="JAVACARD_HOME" value="ext/javacard-sdks/jc222_kit"/>
+  <property name="JCARDSIM_JAR" value="ext/jcardsim/jcardsim-2.2.2-all.jar"/>
   <property name="JAVA_PACKAGE" value="pkgYkneoOath"/>
   <property name="JAVA_PACKAGE_DIR" value="pkgYkneoOath"/>
   <property name="APPLET_NAME" value="YkneoOath"/>
@@ -59,6 +60,7 @@
       <classpath>
         <pathelement path="${build}"/>
         <pathelement location="/usr/share/java/junit4.jar"/>
+        <pathelement path="${JCARDSIM_JAR}"/>
         <fileset dir="${test.lib}">
           <include name="*.jar"/>
         </fileset>
@@ -72,6 +74,7 @@
         <pathelement location="${test.build}"/>
         <pathelement path="${build}"/>
         <pathelement location="/usr/share/java/junit4.jar"/>
+        <pathelement path="${JCARDSIM_JAR}"/>
         <fileset dir="${test.lib}">
           <include name="*.jar"/>
         </fileset>
@@ -99,6 +102,7 @@
           <pathelement location="${test.build}"/>
           <pathelement path="${build}"/>
           <pathelement location="/usr/share/java/junit4.jar"/>
+          <pathelement path="${JCARDSIM_JAR}"/>
           <fileset dir="${test.lib}">
             <include name="*.jar"/>
           </fileset>
