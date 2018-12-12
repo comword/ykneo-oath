@@ -3,7 +3,7 @@ script: ant test
 jdk:
   - openjdk8
 before_install:
-  - sudo apt-get install -y ant junit4 libjacoco-java
+  - sudo apt-get install -y ant junit4
 addons:
   apt:
     update: true
